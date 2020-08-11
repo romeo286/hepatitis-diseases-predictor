@@ -54,6 +54,22 @@
     </div>
   </div>
 <br/>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 mt-5 mb-5" >
+			<div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#6c63ff; color:white;padding:5px">
+				<h4>Prediction</h4>
+			  <div class="alert alert-primary" role="alert">
+				{{ prediction }}
+			  </div>
+			  <hr/>
+			  <h6>Probability Score</h6>
+			  <p>{{ pred_probalility_score }}</p>
+			  
+		  </div>
+		</div>
+	</div>
+</div>
 
 <div class="container" >
 <form method="POST" action="/predict">
@@ -270,18 +286,7 @@
 
 
 
-	<div class="col-md-6" >
-          <div class="card mb-10 shadow-sm" id="custom_card2" style="background-color:#6c63ff; color:white;padding:5px">
-          	<h4>Prediction</h4>
-			<div class="alert alert-primary" role="alert">
-			  {{ prediction }}
-			</div>
-			<hr/>
-			<h6>Probability Score</h6>
-			<p>{{ pred_probalility_score }}</p>
-			
-		</div>
-	</div>
+	
 </div>
 	<br/>
   <br/>
