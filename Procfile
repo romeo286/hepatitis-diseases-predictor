@@ -1,1 +1,1 @@
-web: gunicorn hepatitis:app
+web: gunicorn app:app
